@@ -9,7 +9,10 @@ body{
 }
 
 h1,h2,h3,h4{
-    /* dopuniti */
+    /* centrira textove iz headinga */
+    text-align: center;
+    color: grey;
+    margin: 0%;
 }
 
 header{
@@ -17,8 +20,17 @@ header{
 }
 /* dopisati stil za main */
 
+main{
+    position: relative;
+    margin: 0% auto; /* auto vrlo bitno staviti da bi uradio poravnjanje sa ove strane*/
+    width: 65%;
+}
+
 section{
     /* dopuniti */
+    position: relative;  // vrsi pozicioniranje section bloka i stavlja mu minimalnu visinu.
+    display: block;
+    min-height: 250px;
     background: #e8d273;
     padding: 1em 0;
     margin: 1em 0;
@@ -57,4 +69,51 @@ footer{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: local;
+}
+
+.hcenter{
+    margin: 0% auto;
+}
+.left{
+    float: left;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+}
+
+.right{ // zasto ovde ne ide puno ime klase ?
+    float: right;
+    margin-right: 1em;
+    margin-left: 1em;
+    right: 0%;
+    margin: 20px;
+}
+
+.centered{    // pozicionira element na sredinu i zvog transformise ga vizuelno da bude kako treba.
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottomright{  // pozicioniranje elementa na osnovu roditeljskog kontainera :) veoma korisno
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+
+.v1{
+ float: left;   
+}
+.v2{
+    display: inline-block;
+}
+
+.bkg{   // podesavanje bold na css
+    font-weight: bold;
+    text-indent: 3em;
+}
+
+.bkg1{
+    font-weight: bold;
+    text-indent: 3em;
 }
